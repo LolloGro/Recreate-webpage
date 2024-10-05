@@ -1,0 +1,131 @@
+html {
+    height: 100%;
+}
+
+body {
+    background-image: linear-gradient(pink, salmon);
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 100%;
+}
+
+h1 {
+    font-size: 48px;
+    opacity: 0;
+    animation-name: revel-text;
+    animation-delay: 1000ms;
+    animation-duration: 1s;
+    animation-fill-mode: forwards;
+}
+
+#completed {
+    opacity: 0;
+    animation-name: revel-text;
+    animation-delay: 1200ms;
+    animation-duration: 1s;
+    animation-fill-mode: forwards;
+}
+
+#taskToDo,
+#addBtn {
+    opacity: 0;
+    animation-name: revel-text;
+    animation-delay: 1400ms;
+    animation-duration: 1s;
+    animation-fill-mode: forwards;
+}
+
+.myDiv {
+    width: 400px;
+    margin: auto;
+    padding-bottom: 10px;
+    background-color: white;
+    text-align: center;
+    animation-name: down-upp;
+    animation-duration: 1s;
+}
+
+#taskToDo:focus {
+    outline-color: blue;
+    border-color: blue;
+}
+
+.blink {
+    color: red;
+    animation-name: blink-text;
+    animation-duration: 1s;
+    animation-iteration-count: 2;
+}
+
+.theList {
+    list-style-type: none;
+    margin-bottom: 5px; 
+    animation-name: down;
+    animation-duration: 500ms;
+}
+
+.delBtn {
+    border: none;
+    background-color: transparent;
+    margin-left: 5px;
+}
+
+.delBtn img:hover {
+    opacity: 0.5;
+    /*Lägg till att bilden blir svart*/
+}
+
+.reset {
+    color: red;
+}
+
+.mark {
+    color: grey;
+    text-decoration-line: line-through;
+    /*Ska texten fada in?*/
+
+}
+
+@keyframes down-upp {
+    0% {
+        transform: translateY(-750px);
+    }
+
+    25% {
+        transform: translateY(0);
+    }
+
+    50% {
+        transform: translateY(30px);
+    }
+
+    100% {
+        transform: translateY(0);
+    }
+}
+
+@keyframes revel-text {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+@keyframes blink-text {
+    0% {
+        opacity: 1;
+    }
+
+    100% {
+        opacity: 0;
+    }
+}
+
+@keyframes down {
+    100%{
+        transform: translateY(5px); 
+    }
+}
