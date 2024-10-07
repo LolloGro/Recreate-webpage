@@ -1,6 +1,6 @@
 html {
     height: 100%;
-    font-family: arial;
+    font-family: sans-serif;
 }
 
 body {
@@ -10,7 +10,7 @@ body {
     height: 100%;
 }
 .myDiv {
-    width: 400px;
+    width: 350px;
     margin: auto;
     padding-bottom: 10px;
     background-color: white;
@@ -22,6 +22,8 @@ body {
 h1 {
     font-size: 48px;
     font-family: 'Times New Roman';
+    margin-top: 5px;
+    padding-top: 15px;
     opacity: 0;
     animation-name: revel-text;
     animation-delay: 1000ms;
@@ -55,8 +57,7 @@ h1 {
     border-color:transparent;
 }
 span{
-    font-style:bold;
-    font-size: 18px;
+    font-size: 20px;
 }
 span:hover{
     text-decoration: line-through;
@@ -68,7 +69,7 @@ span:hover{
     font-size: 10px;
     font-style: italic;
     animation-name: blink-text;
-    animation-duration: 500ms;
+    animation-duration: 400ms;
     animation-iteration-count: 2;
 }
 
@@ -95,24 +96,21 @@ span:hover{
 
 .mark {
     animation-name: itemClear;
-    animation-duration: 500ms;
+    animation-duration: 300ms;
     animation-timing-function: ease-in;
     animation-fill-mode: forwards;
 }
 
 @keyframes down-upp {
     0% {
-        transform: translateY(-750px);
+        transform: translateY(-100px);
     }
-
-    25% {
+    25%{
         transform: translateY(0);
     }
-
     50% {
         transform: translateY(50px);
     }
-
     100% {
         transform: translateY(0);
     }
