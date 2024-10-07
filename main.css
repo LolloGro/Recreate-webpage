@@ -71,7 +71,7 @@ h1 {
 }
 
 .delBtn img:hover {
-    opacity: 0.5;
+    filter: contrast(25%); 
     /*Lägg till att bilden blir svart*/
 }
 
@@ -127,5 +127,10 @@ h1 {
 @keyframes down {
     100%{
         transform: translateY(5px); 
+    }
+}
+@keyframes itemClear{
+    0%{
+        
     }
 }
