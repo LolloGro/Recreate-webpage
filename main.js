@@ -34,7 +34,7 @@ addList.appendChild(newTask);
 
 const deletBtn = document.createElement("button");
 deletBtn.classList.add("delBtn");
-deletBtn.innerHTML= '<img src="trashbin.png" />'
+deletBtn.innerHTML= '<img src="bin12.png" />'
 addList.appendChild(deletBtn);  
 
  newTask.addEventListener("click", function(){
