@@ -9,6 +9,15 @@ body {
     background-repeat: no-repeat;
     height: 100%;
 }
+.myDiv {
+    width: 400px;
+    margin: auto;
+    padding-bottom: 10px;
+    background-color: white;
+    text-align: center;
+    animation-name: down-upp;
+    animation-duration: 500ms;
+}
 
 h1 {
     font-size: 48px;
@@ -16,15 +25,18 @@ h1 {
     opacity: 0;
     animation-name: revel-text;
     animation-delay: 1000ms;
-    animation-duration: 1s;
+    animation-duration: 500ms;
     animation-fill-mode: forwards;
 }
 
 #completed {
     opacity: 0;
+    font-size: 12px;
+    margin-top: -20px;
+    margin-bottom: 20px;
     animation-name: revel-text;
     animation-delay: 1200ms;
-    animation-duration: 1s;
+    animation-duration: 500ms;
     animation-fill-mode: forwards;
 }
 
@@ -33,34 +45,30 @@ h1 {
     opacity: 0;
     animation-name: revel-text;
     animation-delay: 1400ms;
-    animation-duration: 1s;
+    animation-duration: 500ms;
     animation-fill-mode: forwards;
 }
 
-.myDiv {
-    width: 400px;
-    margin: auto;
-    padding-bottom: 10px;
-    background-color: white;
-    text-align: center;
-    animation-name: down-upp;
-    animation-duration: 1s;
-}
-
 #taskToDo:focus {
-    outline-color: blue;
-    border-color: blue;
+    outline-color: rgb(39, 109, 189); 
+    outline-width: thin; 
+    border-color:transparent;
+}
+span{
+    font-style:bold;
+    font-size: 18px;
 }
 span:hover{
     text-decoration: line-through;
 }
 
 .blink {
+    margin-top: 5px;
     color: red;
-    font-size: 14px;
+    font-size: 10px;
     font-style: italic;
     animation-name: blink-text;
-    animation-duration: 1s;
+    animation-duration: 500ms;
     animation-iteration-count: 2;
 }
 
@@ -68,7 +76,7 @@ span:hover{
     list-style-type: none;
     margin-bottom: 5px; 
     animation-name: down;
-    animation-duration: 500ms;
+    animation-duration: 300ms;
 }
 
 .delBtn {
@@ -87,7 +95,7 @@ span:hover{
 
 .mark {
     animation-name: itemClear;
-    animation-duration: 1s;
+    animation-duration: 500ms;
     animation-timing-function: ease-in;
     animation-fill-mode: forwards;
 }
@@ -102,7 +110,7 @@ span:hover{
     }
 
     50% {
-        transform: translateY(30px);
+        transform: translateY(50px);
     }
 
     100% {
@@ -132,12 +140,10 @@ span:hover{
 
 @keyframes down {
     100%{
-        transform: translateY(5px); 
+        transform: translateY(10px); 
     }
 }
 @keyframes itemClear{
-    0%{text-decoration: line-through;
-    }
     100%{
         color: grey;
         text-decoration: line-through;
