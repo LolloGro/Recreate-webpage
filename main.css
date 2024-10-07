@@ -1,5 +1,6 @@
 html {
     height: 100%;
+    font-family: arial;
 }
 
 body {
@@ -11,6 +12,7 @@ body {
 
 h1 {
     font-size: 48px;
+    font-family: 'Times New Roman';
     opacity: 0;
     animation-name: revel-text;
     animation-delay: 1000ms;
@@ -49,9 +51,14 @@ h1 {
     outline-color: blue;
     border-color: blue;
 }
+span:hover{
+    text-decoration: line-through;
+}
 
 .blink {
     color: red;
+    font-size: 14px;
+    font-style: italic;
     animation-name: blink-text;
     animation-duration: 1s;
     animation-iteration-count: 2;
@@ -71,8 +78,7 @@ h1 {
 }
 
 .delBtn img:hover {
-    filter: contrast(25%); 
-    /*Lägg till att bilden blir svart*/
+    filter: contrast(15%); 
 }
 
 .reset {
@@ -80,10 +86,10 @@ h1 {
 }
 
 .mark {
-    color: grey;
-    text-decoration-line: line-through;
-    /*Ska texten fada in?*/
-
+    animation-name: itemClear;
+    animation-duration: 1s;
+    animation-timing-function: ease-in;
+    animation-fill-mode: forwards;
 }
 
 @keyframes down-upp {
@@ -130,7 +136,10 @@ h1 {
     }
 }
 @keyframes itemClear{
-    0%{
-        
+    0%{text-decoration: line-through;
+    }
+    100%{
+        color: grey;
+        text-decoration: line-through;
     }
 }
