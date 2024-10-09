@@ -44,8 +44,6 @@ h1 {
 
 #taskToDo,
 #addBtn {
-    position: relative;
-    left: 25px;
     opacity: 0;
     animation-name: revel-text;
     animation-delay: 1400ms;
@@ -64,6 +62,11 @@ span{
 }
 span:hover{
     text-decoration: line-through;
+}
+
+span, .delBtn{
+    position: relative;
+    right: 25px;
 }
 
 .blink {
