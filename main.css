@@ -44,6 +44,8 @@ h1 {
 
 #taskToDo,
 #addBtn {
+    position: relative;
+    left: 25px;
     opacity: 0;
     animation-name: revel-text;
     animation-delay: 1400ms;
@@ -53,11 +55,12 @@ h1 {
 
 #taskToDo:focus {
     outline-color: rgb(39, 109, 189); 
-    outline-width: thin; 
+    outline-width: thin;
     border-color:transparent;
 }
 span{
     font-size: 20px;
+    font-weight: 400;
 }
 span:hover{
     text-decoration: line-through;
