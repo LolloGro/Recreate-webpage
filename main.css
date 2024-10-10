@@ -34,8 +34,7 @@ h1 {
 
 #completed {
     opacity: 0;
-    font-size: 12px;
-    font-weight: 550;
+    font-size: 14px;
     margin-top: -20px;
     margin-bottom: 20px;
     animation-name: revel-text;
@@ -44,8 +43,7 @@ h1 {
     animation-fill-mode: forwards;
 }
 
-#taskToDo,
-#addBtn {
+#taskToDo, #addBtn {
     opacity: 0;
     animation-name: revel-text;
     animation-delay: 1400ms;
@@ -68,6 +66,7 @@ h1 {
 #addBtn{
     height: 30px;
     width: 50px;
+    font-size: 18px;
 }
 
 span {
