@@ -1,6 +1,6 @@
 html {
     height: 100%;
-    font-family: sans-serif;
+    font-family: Arial;
 }
 
 body {
@@ -12,11 +12,13 @@ body {
 
 .myDiv {
     width: 470px;
-    margin: auto;
+    margin: auto; 
+    margin-top: 10px;
     padding-bottom: 22px;
     background-color: white;
     text-align: center;
     animation-name: down-upp;
+    animation-timing-function: ease-in-out;
     animation-duration: 500ms;
     box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
 }
@@ -24,7 +26,6 @@ body {
 h1 {
     font-size: 48px;
     font-family: 'Times New Roman';
-    margin-top: 10px;
     padding-top: 15px;
     opacity: 0;
     animation-name: revel-text;
@@ -36,8 +37,8 @@ h1 {
 #completed {
     opacity: 0;
     font-size: 14px;
-    margin-top: -20px;
-    margin-bottom: 20px;
+    margin-top: -18px;
+    margin-bottom: 30px;
     animation-name: revel-text;
     animation-delay: 1200ms;
     animation-duration: 500ms;
@@ -133,7 +134,7 @@ span,
     }
 
     50% {
-        transform: translateY(50px);
+        transform: translateY(90px);
     }
 
     100% {
