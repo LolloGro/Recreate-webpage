@@ -118,10 +118,6 @@ span,
     filter: contrast(15%);
 }
 
-.reset {
-    color: red;
-}
-
 .mark {
     animation-name: itemClear;
     animation-duration: 300ms;
