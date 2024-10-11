@@ -1,6 +1,6 @@
 html {
     height: 100%;
-    font-family: Arial;
+    font-family: helvetica;
 }
 
 body {
@@ -76,6 +76,7 @@ h1 {
 
 span {
     font-size: 34px;
+    font-weight: bold;
     margin-right: 10px;
 }
 
@@ -94,8 +95,9 @@ span,
     margin-top: -12px;
     margin-bottom: 30px;
     color: red;
-    font-size: 24px;
+    font-size: 20px;
     font-style: italic;
+    font-weight: bold;
     animation-name: blink-text;
     animation-duration: 400ms;
     animation-iteration-count: 2;
