@@ -11,10 +11,10 @@ body {
 }
 
 .myDiv {
-    width: 470px;
-    margin: auto; 
-    margin-top: 10px;
-    padding-bottom: 22px;
+    width: 705px;
+    margin: auto;
+    margin-top: -30px; 
+    padding-bottom: 20px;
     background-color: white;
     text-align: center;
     animation-name: down-upp;
@@ -24,9 +24,9 @@ body {
 }
 
 h1 {
-    font-size: 48px;
+    font-size: 70px;
     font-family: 'Times New Roman';
-    padding-top: 15px;
+    padding-top: 25px;
     opacity: 0;
     animation-name: revel-text;
     animation-delay: 1000ms;
@@ -36,27 +36,36 @@ h1 {
 
 #completed {
     opacity: 0;
-    font-size: 14px;
-    margin-top: -18px;
-    margin-bottom: 30px;
+    font-size: 20px;
+    font-weight: bold;
+    margin-top: -24px; 
+    margin-bottom: 45px;
     animation-name: revel-text;
-    animation-delay: 1200ms;
-    animation-duration: 500ms;
-    animation-fill-mode: forwards;
-}
-
-#taskToDo, #addBtn {
-    opacity: 0;
-    animation-name: revel-text;
-    animation-delay: 1400ms;
+    animation-delay: 1100ms;
     animation-duration: 500ms;
     animation-fill-mode: forwards;
 }
 
 #taskToDo {
-    width: 210px;
-    height: 25px;
-    font-size: 18px;
+    width: 320px;
+    height: 45px;
+    font-size: 30px;
+}
+
+#addBtn {
+    width: 80px;
+    height: 50px;
+    font-size: 30px;
+}
+
+#taskToDo,
+#addBtn {
+    margin-bottom: 20px;
+    opacity: 0;
+    animation-name: revel-text;
+    animation-delay: 1200ms;
+    animation-duration: 500ms;
+    animation-fill-mode: forwards;
 }
 
 #taskToDo:focus {
@@ -65,15 +74,9 @@ h1 {
     border-color: transparent;
 }
 
-#addBtn{
-    height: 30px;
-    width: 50px;
-    font-size: 18px;
-}
-
 span {
-    font-size: 24px;
-    font-weight: 400;
+    font-size: 34px;
+    margin-right: 10px;
 }
 
 span:hover {
@@ -84,12 +87,14 @@ span,
 .delBtn {
     position: relative;
     right: 25px;
+    margin-bottom: 22px;
 }
 
 .blink {
-    margin-top: 5px;
+    margin-top: -12px;
+    margin-bottom: 30px;
     color: red;
-    font-size: 14px;
+    font-size: 24px;
     font-style: italic;
     animation-name: blink-text;
     animation-duration: 400ms;
@@ -134,7 +139,7 @@ span,
     }
 
     50% {
-        transform: translateY(90px);
+        transform: translateY(100px);
     }
 
     100% {
